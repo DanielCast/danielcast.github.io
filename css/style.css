@@ -240,19 +240,20 @@ img {
 /* footer */
 
 .footer {
-    
+
     background-color: #000;
-    bottom:0px;
+    bottom: 0px;
 
 }
+
 .footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
     background: #000;
-    
-    
+
+
 
 }
 
@@ -302,7 +303,7 @@ img {
     display: flex;
     width: 100%;
     padding-top: 30px;
-    
+
 }
 
 .works .container .image-grid {
@@ -348,7 +349,7 @@ img {
 }
 
 .works .container .image-grid img.active {
-    
+
     /* transition: 0.3s; */
     position: fixed;
     width: 100%;
@@ -364,37 +365,42 @@ img {
     /* z-index: 100; */
     /* margin:auto; */
     /* padding-top: 150px; */
-    
+
 }
-.works .container .image-grid img.active  {
+
+.works .container .image-grid img.active {
     display: block;
     position: fixed;
-    
+
     align-self: center;
     float: center;
     justify-self: auto;
     /* transition: 0.3s; */
-} 
+}
 
 
 /* About Page */
 .about {
     background: #fff;
 }
+
 .about .container {
-    
+
     align-self: center;
-    
+
     /* text-align-last: center; */
     background: #fff;
 
 }
+
 .about .container h2 {
     font-weight: 600;
 }
+
 .about .container p span.left-aligned {
     text-align-last: left;
 }
+
 .about .container img {
     position: center;
     margin: auto;
@@ -402,12 +408,14 @@ img {
     display: flex;
     border-radius: 50%;
 }
+
 .about .container q {
     display: flex;
     justify-content: center;
     align-items: center;
     font-style: italic;
 }
+
 .about .container a:hover {
     transition: 0.3s;
     color: var(--primary-color);
@@ -421,6 +429,7 @@ img {
 .about .container q::after {
     display: none;
 }
+
 /* Utility Classes */
 
 /* Container */
@@ -578,10 +587,10 @@ img {
 .hamburger-button .hamburger-line {
     width: 30px;
     height: 3px;
-    
+
     background: #fff;
     margin: 6px 0;
-    
+
 }
 
 /* Mobile Menu */
@@ -618,6 +627,7 @@ img {
     transition: 0.3s;
 
 }
+
 .mobile-menu ul li a i {
     height: 0;
 }
@@ -640,35 +650,47 @@ img {
     .navbar .hamburger-button {
         display: block;
     }
+
     .hero {
         min-height: 100%;
     }
+
     .hero .container {
-        
+
         background-size: 350px 400px;
         background-position: bottom;
         height: 350px;
     }
+
     .hero .container .hero-content {
         min-height: 100%;
     }
+
     .hero .hero-content,
     .hero .hero-text {
         width: 100%;
         text-align: center;
     }
+
+    .hero .container .hero-content .prev,
+    .hero .container .hero-content .next {
+        margin-top: 24px;
+    }
+
     .small-bio .container {
         background-size: 350px 400px;
         background-position: bottom;
         height: 300px;
 
     }
+
     .small-bio .container p {
         width: 100%;
         text-align: center;
         padding-top: 80px;
         line-height: 40px;
     }
+
     /* .hero .hero-buttons .btn {
         margin-bottom: 10px;
         display: block;
@@ -684,7 +706,7 @@ img {
         grid-template-columns: 1fr;
     }
 
-    
+
 
 
     /* .footer .card {
@@ -694,14 +716,14 @@ img {
     .about .container q {
         margin: auto;
         padding: 10px 10px;
-        max-width:90% ;
+        max-width: 90%;
         display: flex;
         justify-content: center;
     }
 
-    
 
-    .footer .container{
+
+    .footer .container {
         text-align: center;
         height: 150px;
     }
