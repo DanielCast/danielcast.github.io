@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Castagna About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/Icon.png" type="image/x-icon">
+
+    <!-- Style specific -->
+    <style>
+        #aboutLink {
+            color: rgb(255, 2, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <script>
+        fetch('Header.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('header').innerHTML = data; })
+            .catch(error => console.error('Error loading content:', error));
+    </script>
+    <!-- Main hero About -->
+    <div class="about">
+        <div class="container">
+            <h2 class="bio-title text-xl text-center" >Hi I'm Daniel Castagna a little bit about me,</h2>
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQEky6FHuHHtcg/profile-displayphoto-shrink_200_200/B4EZRxl6qnGYAY-/0/1737072553255?e=1751500800&v=beta&t=vbA9HvAJpEDfG0jaqo2-W6hSgD8xm-V1_9Iv86Eb6V0"
+                alt="Me and my cat Mao">
+           
+            <p class="bio-paragraph text-md text-center" >
+                <!-- Intro Section -->
+                I am passionate and creative, I think outside the box and I'm prone to search for solutions in
+                unconventional
+                ways. I'm open-minded and love challenges, I work well by myself as well as with a team. I find the
+                different
+                approaches to a problem stimulating and a good opportunity to push my boundaries not only to better
+                myself,
+                but to improve efficiency both within the team and company.
+                Multi-talented and extremely curious I'm a flexible person who can adapt to an ever-changing industry
+                and
+                always stride to improve myself.
+                <br>
+                <!-- Experiences -->
+                Some of the skill I picked up along the way:
+                <br>
+                <br>
+                As a 3D artist:
+                <br>
+                <p class="left-aligned" >&#x2022; 3D modeling props with Autodesk Maya;<br>
+                    &#x2022; Specialization in character sculpting;<br>
+                    &#x2022; ZBrush for High-Poly sculpting;<br>
+                    &#x2022; Substance Painter for baking and texturing;<br>
+                    &#x2022; Maya for Low-Poly quad draw, UV unwrapping & packing, and generation of
+                    hair with XGen;<br>
+                    &#x2022; Unreal Engine 5 for rendering and nodes shading;<br>
+                    &#x2022; A grounding in rigging and skinning;
+                </p><br><br>
+                <p class="bio-paragraph text-md text-center" >As a programmer:</p>
+                <br>
+                <p class="left-aligned" >&#x2022;C#, Unity 3D & 2D engine, SQL;<br>
+                &#x2022;Using C# to create new scripts as well as to manipulate existing methods
+                and classes in Unity;<br>
+                &#x2022;Full process of building working software, including testing and publishing
+                (C#);<br>
+                &#x2022;Using SQL for variables storing and game data saving;<br>
+                &#x2022;I personally built this site from the ground up;</p><br><br>
+                <p class="bio-paragraph text-md text-center" >As a Software and Hardware “Handyman”:</p>
+                <br>
+                <p class="left-aligned" >&#x2022;Building bespoken PCs, consultancy for selecting the appropriate parts,
+                upgrading;<br>
+                &#x2022;Diagnosing source issues after thorough troubleshooting;<br>
+                &#x2022;Successfully dealt with an HDD failure with CMD, safe mode booting, BIOS
+                access, environmental variables and Windows registry manipulation,
+                resulting in new HDD installed and files recovered fully;<br>
+                &#x2022;Remotely assist user in opening the machine and swap pieces;<br>
+                &#x2022;Remotely assisting with Wi-Fi issues,
+                understanding of the properties of
+                2.4GHz and 5GHz connections and their effective applications, knowing
+                how to access, read and set up a modem Hub, knowledge of port
+                forwarding, etc.</p><br>
+                
+            </p>
+            
+            <h2 class="contact text-xl text-center">Contact Me <a href="mailto:danielcast94@libero.it"><i class="fa-solid fa-envelope" style="font-size: 2.1rem;
+                line-height: 1.4; margin: 30px 0 20px;">
+                </i></a></h2>
+            
+            <q class="quote text-md" >"Jack of all trades master of none, though oftentimes better than master of one."</q>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script>
+        fetch('Footer.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer').innerHTML = data; })
+            .catch(error => console.error('Error loading content:', error));
+    </script>
+
+    <script src="js/about.js"></script>
+</body>
+
+</html>
