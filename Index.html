@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Castagna</title>
+
+
+
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap&amp;_cacheOverride=1746189217288"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?_cacheOverride=1746189217289"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="http://127.0.0.1:5500/MySite/css/style.css?_cacheOverride=1746189217289">
+    <link rel="shortcut icon" href="images/Icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+        <!-- Header -->
+        <div id="header"></div>
+
+        <script>
+            fetch('Header.html')
+                .then(response => response.text())
+                .then(data => { document.getElementById('header').innerHTML = data; })
+                .catch(error => console.error('Error loading content:', error));
+        </script>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="slideshow-container">
+                    <div class="mySlides fade" style="display: block;">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/087/397/183/large/daniel-castagna-marcus-1.jpg?1745679935"
+                            style="width:100%">
+                        <div class="text">Marcus</div>
+                    </div>
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/083/914/257/large/daniel-castagna-2025-01-16-21-13-41-seqtest21-0000.jpg?1737071557"
+                            style="width:100%">
+                        <div class="text">Dolly Jane</div>
+                    </div>
+                    <div class="mySlides fade" style="display: none;">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/083/914/071/large/daniel-castagna-2025-01-16-18-11-40-seqtest21-0000-copia.jpg?1737071133"
+                            style="width:100%">
+                        <div class="text">Lilith</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+        <!-- Small Bio -->
+        <section class="small-bio">
+            <div class="container">
+                <p class="text-lg">Some samples of my latest works <br>to see more go to the <a
+                        href="Works.html">Works</a> page
+                    or my
+                    <a href="https://www.artstation.com/danielcast" class="artstation">
+                        <i class="fa-brands fa-artstation" style="font-size: 1.8rem;
+                            line-height: 1.4; margin: 30px 0 20px;">
+                        </i>
+                    </a>
+                </p>
+            </div>
+        </section>
+        <!-- Footer -->
+
+        <div id="footer"></div>
+
+        <script>
+            fetch('Footer.html')
+                .then(response => response.text())
+                .then(data => { document.getElementById('footer').innerHTML = data; })
+                .catch(error => console.error('Error loading content:', error));
+        </script>
+
+        <script src="js/main.js"></script>
+
+
+
+    </section>
+</body>
+
+</html>
