@@ -103,6 +103,9 @@ img {
 
 
 /* Slideshow */
+.hero .container .hero-content {
+    min-height: 900px;
+}
 
 .hero .container .hero-content .slideshow-container {
     max-width: 100%;
