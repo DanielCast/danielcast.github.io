@@ -640,7 +640,9 @@ img {
     .navbar .hamburger-button {
         display: block;
     }
-    
+    .hero {
+        min-height: 100%;
+    }
     .hero .container {
         
         background-size: 350px 400px;
