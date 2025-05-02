@@ -125,7 +125,7 @@ img {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    /* margin-top: -22px; */
     padding: 16px;
     color: #fff;
     font-weight: bold;
@@ -672,10 +672,6 @@ img {
         text-align: center;
     }
 
-    .hero .container .hero-content .prev,
-    .hero .container .hero-content .next {
-        margin-top: 24px;
-    }
 
     .small-bio .container {
         background-size: 350px 400px;
