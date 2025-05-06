@@ -304,6 +304,7 @@ img {
     display: flex;
     width: 100%;
     padding-top: 30px;
+    align-items: center;
 
 }
 
@@ -311,8 +312,11 @@ img {
     position: fixed;
     display: block;
     top: -300px;
-    left:50%;
-    /* width: 100%; */
+    
+    left:0;
+    /* box-sizing: inherit; */
+    width: 100%;
+    justify-content: center;
     align-self: center;
     height: 100px;
     z-index: 100;
@@ -327,6 +331,7 @@ img {
 }
 
 .works .container .text-explanation p {
+    display: flex;
     text-align: center;
     color: #fff ;
 }
