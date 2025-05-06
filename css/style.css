@@ -307,6 +307,30 @@ img {
 
 }
 
+.works .container .text-explanation {
+    position: fixed;
+    display: block;
+    top: -300px;
+    left:850px;
+    /* width: 100%; */
+    align-self: center;
+    height: 100px;
+    z-index: 100;
+    background: #333333ba;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s ease-in-out;
+
+}
+
+.works .container .text-explanation.active{
+    top:20px;
+}
+
+.works .container .text-explanation p {
+    text-align: center;
+    color: #fff ;
+}
+
 .works .container .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
