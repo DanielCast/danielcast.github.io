@@ -112,6 +112,7 @@ img {
     position: relative;
     margin: auto;
     padding-top: 100px;
+    min-height: 850px;
 
 }
 
@@ -665,7 +666,9 @@ img {
     .hero .container .hero-content {
         min-height: 100%;
     }
-
+    .hero .container .hero-content .slideshow-container {
+        min-height: 100%;
+    }
     .hero .hero-content,
     .hero .hero-text {
         width: 100%;
@@ -676,15 +679,20 @@ img {
     .small-bio .container {
         background-size: 350px 400px;
         background-position: bottom;
-        height: 300px;
+        height: 100%;
+        padding-top: 120px;
 
     }
 
     .small-bio .container p {
         width: 100%;
         text-align: center;
-        padding-top: 80px;
-        line-height: 40px;
+        /* padding-top: 80px; */
+        line-height: 30px;
+
+    }
+    .small-bio .container p br {
+        line-height: 10px
     }
 
     /* .hero .hero-buttons .btn {
